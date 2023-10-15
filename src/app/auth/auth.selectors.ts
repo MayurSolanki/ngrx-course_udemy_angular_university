@@ -6,8 +6,9 @@ export const selectAuthState =
     createFeatureSelector<AuthState>("auth");
 
 
+ //
 export const isLoggedIn = createSelector(
-    selectAuthState,
+    selectAuthState,   //same as state => state['auth'] , it select auth state
     auth =>  !!auth.user
 
 );
