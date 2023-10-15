@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 
         this.isLoggedIn$ = this.store
             .pipe(
-                select(isLoggedIn)
+                select(isLoggedIn)  // select prevent duplicate subscription
             );
 
         this.isLoggedOut$ = this.store

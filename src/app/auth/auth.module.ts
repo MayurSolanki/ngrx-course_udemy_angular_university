@@ -34,7 +34,7 @@ export class AuthModule {
             ngModule: AuthModule,
             providers: [
               AuthService,
-                AuthGuard
+              AuthGuard
             ]
         }
     }

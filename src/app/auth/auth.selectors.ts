@@ -7,7 +7,7 @@ export const selectAuthState =
 
 
  //
-export const isLoggedIn = createSelector(
+export const isLoggedIn = createSelector(  // Query to select inside a store/storage
     selectAuthState,   //same as state => state['auth'] , it select auth state
     auth =>  !!auth.user
 
