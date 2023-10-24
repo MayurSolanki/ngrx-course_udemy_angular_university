@@ -53,7 +53,9 @@ const entityMetadata: EntityMetadataMap = {
         sortComparer: compareCourses,
         entityDispatcherOptions: {
             optimisticUpdate: true
-        }
+            // update operation done in optimistic way, do not wait for server to return response
+            // while in passimistic way, once operation done, wait till server response, so slight deplay in UI update, ngRx by default in passimistic way.
+        }  
     },
     Lesson: {
         sortComparer: compareLessons
